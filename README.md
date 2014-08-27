@@ -16,33 +16,22 @@ Usage
 
 如果你只是想使用这个库，可以使用我推送到Sonatype仓库的版本，按如下操作：
 
-在根目录的 `build.gradle` 里添加：
-
-	allprojects {
-	    repositories {
-	        mavenLocal()
-	        mavenCentral()
-			// !!!! ADD THIS !!!
-	        maven{ url 'https://oss.sonatype.org/content/groups/public' }
-	    }
-	}
-
 在依赖中添加：
 
 	dependencies {
 	    compile fileTree(dir: 'libs', include: ['*.jar'])
 
-	    compile 'com.github.chenyoca:plav:1.0@aar'
+	    compile 'com.github.yoojia:plav:1.0@aar'
 	}
 
 
 
 界面截图
 ----------------
-![Screenshot](https://raw.github.com/chenyoca/pinterest-like-adapter-view/master/screenshot_1.png)
-![Screenshot](https://raw.github.com/chenyoca/pinterest-like-adapter-view/master/screenshot_2.png)
-![Screenshot](https://raw.github.com/chenyoca/pinterest-like-adapter-view/master/screenshot_3.png)
-![Screenshot](https://raw.github.com/chenyoca/pinterest-like-adapter-view/master/screenshot_4.png)
+![Screenshot](https://raw.github.com/yoojia/pinterest-like-adapter-view/master/screenshot_1.png)
+![Screenshot](https://raw.github.com/yoojia/pinterest-like-adapter-view/master/screenshot_2.png)
+![Screenshot](https://raw.github.com/yoojia/pinterest-like-adapter-view/master/screenshot_3.png)
+![Screenshot](https://raw.github.com/yoojia/pinterest-like-adapter-view/master/screenshot_4.png)
 
 说明
 -------------
@@ -66,7 +55,7 @@ Usage
 ## License
 
     Copyright 2012 huewu.yang
-    Copyright 2012 chenyoca
+    Copyright 2014 yoojia.chen
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

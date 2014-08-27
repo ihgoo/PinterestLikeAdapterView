@@ -12,9 +12,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.github.chenyoca.snippet.adapters.SimpleAdapter;
-import com.github.chenyoca.snippet.adapters.ViewCreator;
-import com.github.chenyoca.snippet.utils.ActivityUtility;
+import com.github.yoojia.snippet.adapters.SimpleAdapter;
+import com.github.yoojia.snippet.adapters.ViewCreator;
+import com.github.yoojia.snippet.utils.ActivityUtil;
 import com.huewu.pla.lib.MultiColumnListView;
 import com.huewu.pla.lib.MultiColumnListView.OnLoadMoreListener;
 import com.huewu.pla.app.internal.ImageWrapper;
@@ -69,7 +69,7 @@ public class SampleActivity extends Activity implements ViewCreator<ImageWrapper
             public void onLoadMore() {
                 dataSet.addAll(ImgResource.genData());
                 mAdapter.notifyDataSetChanged();
-                ActivityUtility.show(SampleActivity.this, "到List底部自动加载更多数据");
+                ActivityUtil.show(SampleActivity.this, "到List底部自动加载更多数据");
                 //5秒后完成
                 new Handler().postDelayed(new Runnable() {
                     @Override
